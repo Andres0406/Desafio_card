@@ -1,0 +1,113 @@
+:root {
+  --dark-cyan: hsl(185,75%,39%);
+  --very-dark-desaturated-blue: hsl(229,23%,23%);
+  --dark-grayish-blue: hsl(227,10%,46%);
+  --dark-gray: hsl(0,0%,59%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  background-image: url("../imagenes/bg-pattern-top.svg"), url("../imagenes/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.carta {
+  background-color: #fff;
+  width: 326px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+}
+
+.carta-cabeza {
+  width: 100%;
+  display: block;
+}
+
+.carta-cuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.carta-cuerpo-img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
+  background-color: #fff;
+}
+
+.carta-cuerpo-titulo {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.carta-cuerpo-titulo span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.carta-cuerpo-texto {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.carta-pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.carta-pie-social {
+  text-align: center;
+  margin: 0.4rem 0;
+}
+
+.carta-pie-social h3 {
+  font-size: 1.8rem;
+  color: var(--dark-gray);
+}
+
+.carta-pie-social p {
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=estilos.css.map */
