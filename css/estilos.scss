@@ -31,7 +31,7 @@ body{
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.315);
-    //& llama a la clase acutal que esta dentro
+    //& llama a la clase actual que esta dentro
     &-cabeza {
         width: 100%;
         display: block;
@@ -41,15 +41,18 @@ body{
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid rgb(199, 199, 199);
-        &-img {
+        &-img {//modificamos la imagen 
+            width: 200px;
+            height: 200px;
             border: 5px solid #fff;
             border-radius: 50%;
-            margin-top: calc(-48px - 5px);
+            margin-top: calc(-100px - 5px);
             background-color: #fff;
         }
         &-titulo {
             font-size: 1.8rem;
             margin-top: 2rem;
+            text-transform: capitalize;
             span{
                 color: var(--dark-gray);
                 font-weight: 400;
